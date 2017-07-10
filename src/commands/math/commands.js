@@ -446,7 +446,7 @@ CharCmds['/'] = P(Fraction, function(_, super_) {
           leftward instanceof (LatexCmds.text || noop) ||
           leftward instanceof SummationNotation ||
           leftward.ctrlSeq === '\\ ' ||
-          /^[,;:]$/.test(leftward.ctrlSeq)
+          /^[;:]$/.test(leftward.ctrlSeq)
         ) //lookbehind for operator
       ) leftward = leftward[L];
 
